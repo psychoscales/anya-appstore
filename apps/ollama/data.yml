@@ -1,0 +1,21 @@
+name: Ollama
+tags:
+  - AI
+title: 本地大模型推理服务（宿主机安装）
+description: 通过 `anya-backend` Web/API 对接宿主机上的 `ollama`（非 Docker 安装），支持模型列表、下载与对话。
+additionalProperties:
+  key: ollama
+  name: Ollama
+  tags:
+    - AI
+  shortDescZh: 宿主机 Ollama 控制与对话
+  shortDescEn: Control host Ollama and chat
+  type: host
+  website: https://ollama.com/
+  github: https://github.com/ollama/ollama
+  gpuSupport: true
+  defaultPort: 11434
+  anya:
+    installType: host
+    cliBinary: ollama
+    baseURL: http://127.0.0.1:11434
