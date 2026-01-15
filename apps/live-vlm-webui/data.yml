@@ -1,0 +1,19 @@
+name: Live VLM WebUI
+tags:
+  - AI
+title: Real-time VLM WebUI with webcam streaming
+description: Stream webcam video to a VLM backend (Ollama/vLLM/SGLang/cloud) and get real-time analysis in a browser.
+additionalProperties:
+  key: live-vlm-webui
+  name: Live VLM WebUI
+  tags:
+    - AI
+  type: host
+  website: https://github.com/NVIDIA-AI-IOT/live-vlm-webui
+  github: https://github.com/NVIDIA-AI-IOT/live-vlm-webui
+  defaultPort: 8090
+  anya:
+    installType: host
+    removable: true
+    hidden: false
+

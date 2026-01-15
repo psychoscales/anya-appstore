@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: 3000
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: HTTP Port
+      labelZh: HTTP端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: http://ollama:11434
+      edit: true
+      envKey: OLLAMA_BASE_URL
+      labelEn: Ollama Base URL
+      labelZh: Ollama 地址
+      required: true
+      type: text
+

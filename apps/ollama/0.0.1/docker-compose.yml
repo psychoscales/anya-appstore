@@ -1,0 +1,13 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    ports:
+      - "${PANEL_APP_PORT_HTTP}:11434"
+    volumes:
+      - ollama:/root/.ollama
+
+volumes:
+  ollama: {}
+

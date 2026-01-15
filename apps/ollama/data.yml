@@ -10,12 +10,14 @@ additionalProperties:
     - AI
   shortDescZh: 宿主机 Ollama 控制与对话
   shortDescEn: Control host Ollama and chat
-  type: host
+  type: runtime
   website: https://ollama.com/
   github: https://github.com/ollama/ollama
   gpuSupport: true
   defaultPort: 11434
   anya:
-    installType: host
-    cliBinary: ollama
+    installType: compose
     baseURL: http://127.0.0.1:11434
+    # System capability: can't be uninstalled and shouldn't appear on the home/app list.
+    removable: false
+    hidden: true
