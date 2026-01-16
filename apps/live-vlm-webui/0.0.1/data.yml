@@ -1,0 +1,18 @@
+additionalProperties:
+  formFields:
+    - default: 8090
+      edit: true
+      envKey: PANEL_APP_PORT_HTTPS
+      labelEn: HTTPS Port
+      labelZh: HTTPS端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: http://127.0.0.1:11434/v1
+      edit: true
+      envKey: VLM_API_BASE
+      labelEn: VLM API Base
+      labelZh: VLM API Base
+      required: true
+      type: text
+

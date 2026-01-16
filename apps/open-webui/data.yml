@@ -1,0 +1,19 @@
+name: Open WebUI
+tags:
+  - AI
+title: Web UI for chatting with local LLMs via Ollama
+description: A self-hosted web UI for chatting with LLMs; connects to Ollama as the backend.
+additionalProperties:
+  key: open-webui
+  name: Open WebUI
+  tags:
+    - AI
+  type: website
+  website: https://github.com/open-webui/open-webui
+  github: https://github.com/open-webui/open-webui
+  defaultPort: 3000
+  anya:
+    installType: compose
+    removable: true
+    hidden: false
+
