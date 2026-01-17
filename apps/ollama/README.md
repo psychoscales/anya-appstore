@@ -23,6 +23,9 @@ docker compose stop
 - NVIDIA：安装 NVIDIA Container Toolkit；本应用的 `docker-compose.yml` 已默认包含 `gpus: all`（以及 `deploy.resources.reservations.devices`）。如需纯 CPU 运行可移除这些字段。
 - AMD：把镜像改为 `ollama/ollama:rocm`，并按需添加 `devices: ["/dev/kfd", "/dev/dri"]`。
 
+调试提示（可选）：
+- 如需排查容器内是否识别到 GPU，可临时设置 `OLLAMA_DEBUG=true` 并查看容器日志。
+
 ## Anya Backend 配置
 
 - `ANYA_APPSTORE_DIR`：指向本仓库根目录（例如：`/proj/anya/anya-appstore`）

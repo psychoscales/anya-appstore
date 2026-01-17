@@ -17,6 +17,10 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      # Optional overrides (leave empty for auto-detection).
+      - CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-}
+      - OLLAMA_LLM_LIBRARY=${OLLAMA_LLM_LIBRARY:-}
+      - OLLAMA_DEBUG=${OLLAMA_DEBUG:-false}
     ports:
       - "${PANEL_APP_PORT_HTTP}:11434"
     volumes:
