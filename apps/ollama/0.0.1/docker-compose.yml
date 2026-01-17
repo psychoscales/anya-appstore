@@ -6,8 +6,5 @@ services:
     ports:
       - "${PANEL_APP_PORT_HTTP}:11434"
     volumes:
-      - ollama:/root/.ollama
-
-volumes:
-  ollama: {}
-
+      # Persist models on the host (relative to this compose file's directory).
+      - ./data:/root/.ollama

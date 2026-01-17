@@ -2,7 +2,10 @@
 
 一个极简的应用商店仓库（参考 1Panel appstore 的目录结构），用于被 `anya-backend` 读取并展示应用列表。
 
-当前仅包含一个应用：`ollama`（宿主机安装/运行，非 Docker 安装）。
+当前包含：
+- `ollama`：本地推理服务（Docker Compose，数据挂载到 `./data`）
+- `open-webui`：基于 Ollama 的聊天 Web UI（Docker Compose）
+- `live-vlm-webui`：基于 DGX Spark playbook 的 VLM WebUI（分发/元信息）
 
 ## 目录结构
 

@@ -11,7 +11,10 @@ Note: this AppStore entry is for distribution + metadata only. The current Anya 
 - Open `https://<host>:${PANEL_APP_PORT_HTTPS}` in a browser.
 - You must use HTTPS for webcam access; accept the self-signed certificate warning on first visit.
 
+## VLM Backend (Ollama)
+
+This app needs a VLM backend. For local Ollama via Docker Compose, see `anya-appstore/apps/ollama/README.md`.
+
 ## Rollback
 
 - `pip uninstall live-vlm-webui`
-
