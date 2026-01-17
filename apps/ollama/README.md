@@ -20,7 +20,7 @@ docker compose stop
 
 ## GPU（可选）
 
-- NVIDIA：安装 NVIDIA Container Toolkit，然后在 compose 里给 `ollama` 服务增加 `gpus: all`。
+- NVIDIA：安装 NVIDIA Container Toolkit；本应用的 `docker-compose.yml` 已默认包含 `gpus: all`（以及 `deploy.resources.reservations.devices`）。如需纯 CPU 运行可移除这些字段。
 - AMD：把镜像改为 `ollama/ollama:rocm`，并按需添加 `devices: ["/dev/kfd", "/dev/dri"]`。
 
 ## Anya Backend 配置
