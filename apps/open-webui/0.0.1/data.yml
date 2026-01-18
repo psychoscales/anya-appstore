@@ -8,11 +8,10 @@ additionalProperties:
       required: true
       rule: paramPort
       type: number
-    - default: http://ollama:11434
+    - default: http://host.docker.internal:11434
       edit: true
       envKey: OLLAMA_BASE_URL
       labelEn: Ollama Base URL
       labelZh: Ollama 地址
       required: true
       type: text
-

@@ -22,7 +22,7 @@ services:
       - OLLAMA_LLM_LIBRARY=${OLLAMA_LLM_LIBRARY:-}
       - OLLAMA_DEBUG=${OLLAMA_DEBUG:-false}
     ports:
-      - "${PANEL_APP_PORT_HTTP}:11434"
+      - "${PANEL_APP_PORT_HTTP:-11434}:11434"
     volumes:
       # Persist models on the host (relative to this compose file's directory).
       - ./data:/root/.ollama
