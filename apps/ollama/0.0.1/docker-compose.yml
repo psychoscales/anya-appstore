@@ -1,7 +1,6 @@
 services:
   ollama:
     image: ollama/ollama:latest
-    container_name: ollama
     restart: unless-stopped
     # Enable NVIDIA GPU when available (requires NVIDIA Container Toolkit).
     # Docker Compose v2 understands `gpus:`; `deploy` keeps compatibility with some setups.
