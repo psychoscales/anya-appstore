@@ -16,6 +16,10 @@ services:
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
       - NVIDIA_DRIVER_CAPABILITIES=compute,utility
+      # On aarch64 (e.g. DGX Spark), the CUDA backend ships under /usr/lib/ollama/cuda_v*.
+      # Ensure the dynamic loader can find libggml-base + CUDA runtime/cublas deps.
+      # Keep /usr/local/nvidia/* so NVIDIA Container Toolkit injected libs remain discoverable.
+      - LD_LIBRARY_PATH=/usr/lib/ollama:${OLLAMA_CUDA_LIBDIR:-/usr/lib/ollama/cuda_v13}:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
       # Optional overrides (leave empty for auto-detection).
       - CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-}
       - OLLAMA_LLM_LIBRARY=${OLLAMA_LLM_LIBRARY:-}
