@@ -20,7 +20,14 @@ docker compose stop
 
 ## GPU（可选）
 
-- NVIDIA：安装 NVIDIA Container Toolkit；本应用的 `docker-compose.yml` 已默认包含 `gpus: all`（以及 `deploy.resources.reservations.devices`）。如需纯 CPU 运行可移除这些字段。
+- NVIDIA：安装 NVIDIA Container Toolkit；本应用的 `docker-compose.yml` 已默认包含 `gpus: all`。安装后通常需要在宿主机执行（一次性）：
+
+```bash
+sudo nvidia-ctk runtime configure --runtime=docker
+sudo systemctl restart docker
+```
+
+如需纯 CPU 运行可移除 `gpus: all`。
 - AMD：把镜像改为 `ollama/ollama:rocm`，并按需添加 `devices: ["/dev/kfd", "/dev/dri"]`。
 
 调试提示（可选）：
