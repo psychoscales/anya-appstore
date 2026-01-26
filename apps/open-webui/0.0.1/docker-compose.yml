@@ -9,7 +9,5 @@ services:
     extra_hosts:
       - "host.docker.internal:host-gateway"
     volumes:
-      - open-webui:/app/backend/data
-
-volumes:
-  open-webui:
+      # Persist Open WebUI data on the host (relative to this compose file's directory).
+      - ./data:/app/backend/data
