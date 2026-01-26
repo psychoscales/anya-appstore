@@ -2,8 +2,7 @@ default: README.md
 pages:
   - title: 概览
     file: README.md
-  - title: 安装 Ollama
-    file: install-ollama.md
-  - title: Continue 配置示例
+  - title: 在 Anya 中启动 Ollama
+    file: anya-ollama.md
+  - title: Continue 配置（连接 Anya 的 Ollama）
     file: continue-config.md
-
