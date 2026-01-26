@@ -1,0 +1,21 @@
+name: Vibe Coding (VS Code + Ollama)
+tags:
+  - AI
+  - DevTools
+title: 在 VS Code 中用 Continue + Ollama 打造“Vibe Coding”助手（中文示例）
+description: 中文示例：使用 DGX Spark 或本地机器的 Ollama，为 VS Code 的 Continue 插件提供编码助手能力（含多文档导航与图片引用示例）。
+additionalProperties:
+  key: vibe-coding
+  name: Vibe Coding (VS Code + Ollama)
+  tags:
+    - AI
+    - DevTools
+  type: host
+  website: https://www.continue.dev/
+  github: https://github.com/continuedev/continue
+  defaultPort: 0
+  anya:
+    installType: host
+    removable: true
+    hidden: false
+

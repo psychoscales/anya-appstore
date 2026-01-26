@@ -1,0 +1,9 @@
+default: README.md
+pages:
+  - title: 概览
+    file: README.md
+  - title: 安装 Ollama
+    file: install-ollama.md
+  - title: Continue 配置示例
+    file: continue-config.md
+
