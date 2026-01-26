@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160">
+  <rect x="12" y="12" width="696" height="136" rx="12" fill="#0b1220" stroke="#94a3b8" stroke-width="2"/>
+  <text x="32" y="56" fill="#e5e7eb" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18">
+    &lt;cacheDir&gt;/compose/ollama/data/
+  </text>
+  <text x="32" y="96" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="16">
+    (models persisted here)
+  </text>
+</svg>
+

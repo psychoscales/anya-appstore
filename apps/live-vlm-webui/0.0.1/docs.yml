@@ -1,0 +1,5 @@
+default: README.md
+pages:
+  - title: README
+    file: README.md
+
