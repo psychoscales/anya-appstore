@@ -5,7 +5,7 @@
 - 打开 Anya：`/apps`
 - 点击“更新列表”（同步 AppStore）
 
-## 2) 启动 Ollama（由 Anya 管理）
+## 2) 启动 Ollama
 
 任选其一：
 
@@ -16,7 +16,7 @@
 - 默认 HTTP 端口为 `11434`（Anya 的 `Ollama` 应用配置里可调整）
 - Ollama 的数据（模型等）会落盘在 Anya 的缓存目录下 `compose/ollama/data/`（用于验证“数据不丢”）
 
-## 3) 安装/拉取模型（在 Anya 中完成）
+## 3) 安装/拉取模型
 
 - 打开 `/models`
 - 在 “Library / 搜索” 中选择一个模型（例如：`qwen2.5:7b`、`llama3.1:8b` 等）
