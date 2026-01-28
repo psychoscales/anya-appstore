@@ -1,0 +1,10 @@
+services:
+  web:
+    image: hashicorp/http-echo:0.2.3
+    restart: unless-stopped
+    command: ["-listen", ":5678", "-text", "demo-migrate v0.0.1"]
+    ports:
+      - "${PANEL_APP_PORT_HTTP:-18090}:5678"
+    volumes:
+      - ./data:/data
+
