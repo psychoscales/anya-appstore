@@ -1,0 +1,7 @@
+default: README.md
+pages:
+  - title: README
+    file: README.md
+  - title: GPU Notes
+    file: gpu.md
+
