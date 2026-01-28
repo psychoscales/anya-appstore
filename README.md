@@ -7,6 +7,9 @@
 - `open-webui`：基于 Ollama 的聊天 Web UI（Docker Compose）
 - `live-vlm-webui`：基于 DGX Spark playbook 的 VLM WebUI（分发/元信息）
 
+开发者指南：
+- `docs/APP_DEV_GUIDE.md`
+
 ## 目录结构
 
 - `data.yaml`：商店元信息（可选，当前仅做占位）
