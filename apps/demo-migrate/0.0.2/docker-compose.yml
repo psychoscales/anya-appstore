@@ -1,0 +1,17 @@
+services:
+  web:
+    # hashicorp/http-echo is amd64-only and fails on arm64 with "exec format error".
+    # BusyBox is multi-arch; we serve a fixed index.html to keep the demo behavior.
+    image: busybox:1.36.1
+    restart: unless-stopped
+    command:
+      - sh
+      - -c
+      - |
+        mkdir -p /data/www
+        printf '%s\n' 'demo-migrate v0.0.2' > /data/www/index.html
+        exec httpd -f -p 5678 -h /data/www
+    ports:
+      - "${PANEL_APP_PORT_HTTP:-18090}:5678"
+    volumes:
+      - ./data:/data

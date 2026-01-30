@@ -1,0 +1,10 @@
+schemaVersion: 1
+paths:
+  - from: "0.0.1"
+    to: "0.0.2"
+    steps:
+      - type: file.write
+        args:
+          path: data/migrated_to_0.0.2.txt
+          content: migrated OK (0.0.1 -> 0.0.2)
+
